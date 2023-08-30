@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Bán Hàng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Trang Bán Hàng</h1>
+    <div class="mucgia">
+        <div id="priceFilters" class="hidden">
+            <label for="priceRange">Mức giá:</label>
+            <select id="priceRange">
+                <option value="0-9999999">Tất cả</option>
+                <option value="0-99999">Dưới 100.000 VND</option>
+                <option value="100000-199999">100.000 - 199.999 VND</option>
+                <option value="200000-299999">200.000 - 299.999 VND</option>
+                <option value="300000-9999999">300.000 VND trở lên</option>
+            </select>
+            <button id="filterButton">Lọc</button>
+        </div>
+    </div>
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Tên hàng</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <footer>
+        </footer>
+    </table>
+    <table>
+        <tr>
+            <td colspan="4" align="right">Tổng tiền:</td>
+            <td id="totalAmount">0 VND</td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

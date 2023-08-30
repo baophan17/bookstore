@@ -1,0 +1,505 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+body {
+    font-family: Arial;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* padding: 10px; */
+    /* background: #d8e4f4; */
+}
+
+/* Header/Bookstore Title */
+.header {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: #fff;
+
+}
+
+/* button search */
+.btn-search {
+    border-radius: 5px;
+
+}
+
+.btn-login {
+    margin-left: 60px;
+    border-radius: 5px;
+}
+
+.btn-home {
+
+    float: left;
+    border-radius: 5px;
+    margin-left: 2%;
+
+}
+
+.btn-book {
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.btn-picture {
+    margin-left: 50px;
+}
+
+.btn-logout {
+    margin-left: 40px;
+}
+
+#icon-button {
+    margin-left: 30px;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+/* Navigation  */
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+
+}
+
+/* Navigation links */
+/* .topnav a {
+    width: 100%;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} */
+.topnav {
+    position: sticky;
+    top: 0;
+    align-items: center;
+    z-index: 100000;
+    height: 50px;
+    display: flex;
+    background: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.topnav a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* .topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    background: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
+} */
+/* Change link color on hover */
+.topnav a:hover {
+    /* background-color: #7085db; */
+    color: white;
+
+}
+
+/* Create grid layout with 3 columns */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+/* Book images */
+.images {
+    width: 100%;
+    height: 200px;
+}
+
+/* Add styles for book cards */
+.card-book {
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    border: 2px solid gray;
+}
+
+.btn-buy {
+    background-color: #25287b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.btn-buy:hover {
+    background-color: #7085db;
+}
+
+/* Add styles for introduction card */
+
+
+/* Sidebar */
+.sidebar {
+    background-color: #d8e4f4;
+    padding: 20px;
+}
+
+.sidebar .card {
+
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #25287b;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-image: url();
+}
+
+/* Footer */
+.footer {
+
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+    font-size: 20px;
+}
+
+.full-width {
+    width: 100vw;
+}
+
+
+
+
+/* Cột phải */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+}
+
+
+
+.rightcolumn .card:not(:last-child) {
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+
+
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Cột phải */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.search-container input[type="text"] {
+    padding: 6px;
+    border: none;
+}
+
+.search-container button[type="submit"] {
+    background-color: #25287b;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.card {
+    width: 100%;
+    flex-basis: 28%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-image: url();
+}
+
+
+ul {
+    position: relative;
+    display: flex;
+    gap: 05px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(32, 26, 26, 0.1);
+    transition: 0.5s;
+}
+
+ul li:hover {
+    width: 88px;
+    box-shadow: 0 18px 25px rgba(242, 14, 14, 0.2);
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--color-start), var(--color-end));
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(25px);
+}
+
+ul li:hover::before {
+    opacity: 1;
+}
+
+ul li::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--color-start), var(--color-end));
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+}
+
+ul li:hover::after {
+    opacity: 1;
+}
+
+ul li i {
+    color: #020000;
+    font-size: 1.75em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+ul li:hover i {
+    transform: scale(1.1);
+    font-size: 1.75em;
+    transition-delay: 0.25s;
+}
+
+ul li .titulo {
+    position: absolute;
+    color: #202728;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+ul li:hover .titulo {
+    transform: scale(1);
+    transition-delay: 0.25s;
+}
+
+/* menu làm chưa được nè*/
+.menu-toggle {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-toggle input {
+    display: none;
+}
+
+.menu-toggle label {
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle input:checked~.menu-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle input:checked~.menu-btn span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle input:checked~.menu-btn span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    background-color: #fff;
+    padding: 10px;
+    display: none;
+}
+
+.menu-toggle input:checked~.menu {
+    display: block;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* css deltail*/
+.card-book {
+    /* background-color: #fff; */
+    padding: 20px;
+    text-align: center;
+    transition: border-color 0.3s ease-in-out;
+}
+
+
+.card-book:hover {
+    border: 2px solid #00ff00;
+
+}
+
+.content-product {
+    display: flex;
+}
+
+.img-book {
+    height: 300px;
+    border-radius: 5px;
+    margin-top: 8%;
+    margin-left: 5px;
+}
+
+.des-book {
+    margin-left: 15px;
+}
+
+.des-book>h2 {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.des-book>p,
+h5 {
+    font-size: 20px;
+}
+
+.btn-addtocart {
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-left: 70px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-buy-des {
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-left: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-addtocart:hover {
+    background-image: linear-gradient(to right, #3498db, #1abc9c);
+}
+
+.btn-buy-des:hover {
+    background-image: linear-gradient(to right, #3498db, #1abc9c);
+}
